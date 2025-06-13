@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Printer virker ikke, den står bare og henger"
+  },
+  {
+    "id": 2,
+    "title": "Teams krasjer ved oppstart"
+  },
+  {
+    "id": 3,
+    "title": "Klarer ikke å søke etter eposter i office"
+  },
+  {
+    "id": 4,
+    "title": "Grow laster ikke"
+  },
+  {
+    "id": 5,
+    "title": "Får ikke skrevet ut på printer"
+  },
+  {
+    "id": 6,
+    "title": "Teams-møte hakker, kamera er dårlig"
+  },
+  {
+    "id": 7,
+    "title": "Passord må byttes ofte, hvorfor! Det er slitsomt!"
+  },
+  {
+    "id": 8,
+    "title": "Grow viser feil data"
+  },
+  {
+    "id": 9,
+    "title": "Printerkøen henger"
+  },
+  {
+    "id": 10,
+    "title": "Teams funker ikke! jeg får ikke varslinger!"
+  },
+  {
+    "id": 11,
+    "title": "Jeg kommer meg ikke inn i grow, kollegaen min har tilgang"
+  },
+  {
+    "id": 12,
+    "title": "Passordregler er uklare"
+  }
+]
