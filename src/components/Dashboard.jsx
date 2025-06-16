@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { Container, Row, Col, Card, Navbar, Nav, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import KeywordChart from './KeyWordChart';
+import LineChart from './LineChart';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -38,6 +39,16 @@ const Dashboard = () => {
                         <Card.Title>Filtrering av type henvendelser</Card.Title>
                         <Card.Text>Her kan du filtrere på forskjellige type henvendelser, som "Printer", "Office", "Passord"</Card.Text>
                         <KeywordChart />
+                    </Card.Body>
+                 </Card>
+                </Col>
+
+                <Col md={6}>
+                 <Card className="mb-4 shadow-sm">
+                    <Card.Body>
+                        <Card.Title>Utvikling over tid</Card.Title>
+                        <Card.Text>Her kan du se utviklingen av saker over tid.</Card.Text>
+                        <LineChart />
                     </Card.Body>
                  </Card>
                 </Col>

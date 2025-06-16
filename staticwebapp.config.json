@@ -1,0 +1,25 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/data/*", "/api/*"]
+  },
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/4f9b015f-aad5-4697-a05e-7290cda687ed/v2.0",
+          "clientIdSettingName": "AAD_CLIENT_ID"
+        },
+        "login": {
+          "loginParameters": ["scope=openid profile email"]
+        }
+      }
+    }
+  }
+}

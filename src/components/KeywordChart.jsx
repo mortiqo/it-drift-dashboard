@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js/auto';
 import { Form } from 'react-bootstrap';
+import { keywords, keywordColors } from "../config/keywords";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -12,7 +13,6 @@ const KeywordChart = () => {
     const [selectedKeyword, setSelectedKeyword] = useState('alle');
 
     const [rawCounts, setRawcounts] = useState({});
-    const keywords = ['tilgang', 'feil', 'konto', 'grow', 'sikkerhet', 'utstyr'];
 
     useEffect(() => {
         axios.get('/data/jira_export_cleaned.json')
@@ -37,16 +37,7 @@ const KeywordChart = () => {
         });
     }, []);
 
-const keywordColors = {
-    tilgang: '#007bff',
-    feil: '#28a745',
-    konto: '#ffc107',
-    grow: '#dc3545',
-    sikkerhet: '#6f42c1',
-    utstyr: '#17a2b8',
-    alle: ['#007bff', '#28a745', '#ffc107', '#dc3545']
 
-};
 
 const buildChartData = (counts, filter) => {
     const filteredCounts = filter === 'alle'
