@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-import NotFound from './components/Notfound';
+import NotFound from './components/NotFound';
 import Admin from './components/Admin';
 
 const isAuthenticated = () => {
