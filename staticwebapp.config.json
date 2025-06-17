@@ -14,8 +14,8 @@
       "azureActiveDirectory": {
         "registration": {
           "openIdIssuer": "https://login.microsoftonline.com/4f9b015f-aad5-4697-a05e-7290cda687ed/v2.0",
-          "clientIdSettingName": "AAD_CLIENT_ID",
-          "clientSecretSettingName": "AAD_CLIENT_SECRET"
+          "clientIdSettingName": "e8c120a6-bbb9-430a-98da-cfada887eace",
+          "clientSecretSettingName": "ENTRA_APP_CLIENT_SECRET"
         },
         "login": {
           "loginParameters": ["scope=openid profile email"]

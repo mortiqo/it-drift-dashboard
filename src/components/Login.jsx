@@ -1,50 +1,22 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Container, Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Form, Button, Card } from 'react-bootstrap';
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    if (username && password) {
-      localStorage.setItem('isLoggedIn', 'true');
-      navigate('/Dashboard');
-    } else {
-      alert('Vennligst fyll inn brukernavn og passord');
-    }
+  const handleMicrosoftLogin = () => {
+    // Dette er URL-en som Static Web Apps bruker for å starte Entra ID (Azure AD) innloggingsflyten
+    // SWA vil håndtere omdirigeringen til Microsofts påloggingsside og deretter tilbake til appen din.
+    window.location.href = '/.auth/login/aad';
   };
 
   return (
     <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
       <Card style={{ width: '100%', maxWidth: '400px' }} className="p-4 shadow">
-        <h2 className="mb-4 text-center">Logg inn</h2>
-        <Form onSubmit={handleLogin}>
-          <Form.Group className="mb-3">
-            <Form.Label>Brukernavn</Form.Label>
-            <Form.Control
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              placeholder="Skriv inn brukernavn"
-            />
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Label>Passord</Form.Label>
-            <Form.Control
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Skriv inn passord"
-            />
-          </Form.Group>
-          <Button variant="primary" type="submit" className="w-100">
-            Logg inn
-          </Button>
-        </Form>
+        <h2 className="mb-4 text-center">Velkommen til Dashboard!</h2>
+        <p className="text-center">For å fortsette, vennligst logg inn med din organisasjonskonto.</p>
+        <Button variant="primary" onClick={handleMicrosoftLogin} className="w-100">
+          Logg inn med Microsoft Entra ID
+        </Button>
       </Card>
     </Container>
   );
