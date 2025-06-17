@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     if (username && password) {
       localStorage.setItem('isLoggedIn', 'true');
-      navigate('/dashboard');
+      navigate('/Dashboard');
     } else {
       alert('Vennligst fyll inn brukernavn og passord');
     }

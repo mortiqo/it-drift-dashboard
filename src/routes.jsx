@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './components/login';
-import Dashboard from './components/dashboard';
-import NotFound from './components/notfound';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import NotFound from './components/Notfound';
 import Admin from './components/Admin';
 
 const isAuthenticated = () => {
@@ -10,16 +10,16 @@ const isAuthenticated = () => {
 };
 
 const ProtectedRoute = ({ children }) => {
-  return isAuthenticated() ? children : <Navigate to="/login" />;
+  return isAuthenticated() ? children : <Navigate to="/Login" />;
 };
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
         <Route
-          path="/dashboard"
+          path="/Dashboard"
           element={
             <ProtectedRoute>
               <Dashboard />
@@ -27,14 +27,14 @@ const AppRoutes = () => {
           }
         />
         <Route
-          path="/admin"
+          path="/Admin"
           element={
             <ProtectedRoute>
               <Admin />
             </ProtectedRoute>
           }
         />
-        <Route path="/" element={<Navigate to="/dashboard" />} />
+        <Route path="/" element={<Navigate to="/Dashboard" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
