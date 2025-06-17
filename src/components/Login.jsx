@@ -13,7 +13,7 @@ const msalConfig = {
     auth: {
         clientId: "e8c120a6-bbb9-430a-98da-cfada887eace", // Din "Application (client) ID"
         authority: "https://login.microsoftonline.com/4f9b015f-aad5-4697-a05e-7290cda687ed", // Din "Directory (tenant) ID"
-        redirectUri: "https://ambitious-ocean-0721e3203.6.azurestaticapps.net/", // Din lokale URL for testing, eller Static Web App URL i prod
+        redirectUri: "http://localhost:4280", // Din lokale URL for testing
         // redirectUri: "https://your-static-app.azurestaticapps.net/", // For produksjon
     },
     cache: {
