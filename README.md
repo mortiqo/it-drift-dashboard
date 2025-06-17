@@ -93,7 +93,7 @@ Dette dashboardet er utviklet som en del av en fagprøve og representerer en pro
 * **SCIM (System for Cross-domain Identity Management):** For å automatisere brukertilgang og provisjonering i et større økosystem.
 * **Mer avansert rapportering:** Mulighet for dypere analyser, tilpassede rapporter og eksport av data.
 * **Ytelsesoptimalisering:** Ved caching av data eller server-side rendering for store datasett.
-* **Utvidet universell utforming:** Videre testing og forbedringer for å sikre full tilgjengelighet for alle brukere.
+* **Utvidet universell utforming:** Videre testing og forbedringer for å sikre full tilgjengelighet for alle brukere, samt legge til et admingrensesnitt, med Azure RBAC tilgang. 
 
 ## Kontakt
 
