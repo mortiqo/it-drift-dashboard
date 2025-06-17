@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import { Container, Row, Col, Card, Navbar, Nav, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import KeywordChart from './KeyWordChart';
+import KeywordChart from './KeywordChart';
 import LineChart from './LineChart';
 
 const Dashboard = () => {
