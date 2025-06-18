@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'; // VIKTIG: Importér Router her
+import { redirect, BrowserRouter as Router } from 'react-router-dom'; // VIKTIG: Importér Router her
 import AppRoutes from './routes';
 
 // IMPORTER MSAL-RELATERTE TING HER
@@ -11,10 +11,11 @@ import { MsalProvider } from "@azure/msal-react";
 
 const msalConfig = {
     auth: {
-        clientId: "Ye8c120a6-bbb9-430a-98da-cfada887eace", // F.eks. "e8c120a6-bbb9-430a-98da-cfada887eace"
+        clientId: "e8c120a6-bbb9-430a-98da-cfada887eace", // F.eks. "e8c120a6-bbb9-430a-98da-cfada887eace"
         authority: "https://login.microsoftonline.com/4f9b015f-aad5-4697-a05e-7290cda687ed", 
-       // redirectUri: "https://ambitious-ocean-0721e3203.6.azurestaticapps.net/", 
-        redirectUri: "http://localhost:4280", // For test
+        // redirectUri: "https://ambitious-ocean-0721e3203.6.azurestaticapps.net", 
+        // redirectUri: "http://localhost:5173", // For test
+        redirectUri: window.location.origin, // Din lokale URL for testing
     },
     cache: {
         cacheLocation: "sessionStorage", // Anbefalt for SPAs

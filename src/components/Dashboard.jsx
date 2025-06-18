@@ -1,15 +1,14 @@
 import React, { use } from 'react';
+import { useMsal } from '@azure/msal-react';
 import { Container, Row, Col, Card, Navbar, Nav, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import KeywordChart from './KeywordChart';
 import LineChart from './LineChart';
 
 const Dashboard = () => {
-    const navigate = useNavigate();
-
+    const { instance } = useMsal(); // <- Bruk MSAL instance
     const handleLogout = () => {
-        localStorage.removeItem('isLoggedIn');
-        navigate('/Login');
+        instance.logoutRedirect(); // <- Logg ut på riktig måte
     };
 
     return (
@@ -38,7 +37,7 @@ const Dashboard = () => {
                     <Card.Body>
                         <Card.Title>Filtrering av type henvendelser</Card.Title>
                         <Card.Text>Her kan du filtrere på forskjellige type henvendelser, som "Printer", "Office", "Passord"</Card.Text>
-                        <KeywordChart />
+                        <KeywordChart /> 
                     </Card.Body>
                  </Card>
                 </Col>
