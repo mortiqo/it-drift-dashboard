@@ -27,6 +27,7 @@ ChartJS.register(
 const LineChart = () => {
     const [chartData, setChartData] = useState(null);
     const [selectedKeywords, setSelectedKeywords] = useState(keywords);
+    const [showAll, setShowAll] = useState(false);  // Ny state for "Alle"
     const [dateFilter, setDateFilter] = useState("all");
 
     useEffect(() => {
@@ -34,7 +35,6 @@ const LineChart = () => {
             .then((response) => {
                 const tickets = response.data;
 
-                // Filtrer datoer basert på valgt intervall
                 const now = new Date();
                 let filteredTickets = tickets;
 
@@ -49,43 +49,93 @@ const LineChart = () => {
                     });
                 }
 
-                const counts = {};
+                // Hvis showAll er true, lag ett datasett for summen av alt (keywords + annet)
+                if (showAll) {
+                    const counts = {};
+                    filteredTickets.forEach(ticket => {
+                        const date = ticket.created.slice(0, 10);
+                        const title = ticket.title.toLowerCase();
 
-                filteredTickets.forEach(ticket => {
-                    const date = ticket.created.slice(0, 10);
-                    const title = ticket.title.toLowerCase();
+                        if (!counts[date]) {
+                            counts[date] = 0;
+                        }
 
-                    if (!counts[date]) {
-                        counts[date] = {};
-                        selectedKeywords.forEach(k => counts[date][k] = 0);
-                    }
+                        // Tell hvis tittel matcher noe keyword
+                        const matchesKeyword = keywords.some(k => title.includes(k));
 
-                    selectedKeywords.forEach(keyword => {
-                        if (title.includes(keyword)) {
-                            counts[date][keyword]++;
+                        if (matchesKeyword) {
+                            counts[date]++;
+                        } else {
+                            // teller også "annet"
+                            counts[date]++;
                         }
                     });
-                });
 
-                const sortedDates = Object.keys(counts).sort();
-                const datasets = selectedKeywords.map(keyword => ({
-                    label: keyword,
-                    data: sortedDates.map(date => counts[date][keyword] || 0),
-                    borderColor: keywordColors[keyword],
-                    backgroundColor: keywordColors[keyword],
-                    fill: false,
-                    tension: 0.2
-                }));
+                    const sortedDates = Object.keys(counts).sort();
 
-                setChartData({
-                    labels: sortedDates,
-                    datasets: datasets
-                });
+                    const datasets = [{
+                        label: "Alle saker",
+                        data: sortedDates.map(date => counts[date] || 0),
+                        borderColor: '#000000',
+                        backgroundColor: '#000000',
+                        fill: false,
+                        tension: 0.2
+                    }];
+
+                    setChartData({
+                        labels: sortedDates,
+                        datasets
+                    });
+                } else {
+                    // Ellers normal oppførsel med valgte keywords, eller "annet" hvis tomt
+                    const activeKeywords = selectedKeywords.length === 0 ? ["annet"] : selectedKeywords;
+
+                    const counts = {};
+
+                    filteredTickets.forEach(ticket => {
+                        const date = ticket.created.slice(0, 10);
+                        const title = ticket.title.toLowerCase();
+
+                        if (!counts[date]) {
+                            counts[date] = {};
+                            activeKeywords.forEach(k => counts[date][k] = 0);
+                        }
+
+                        if (activeKeywords.includes("annet")) {
+                            const hasKeyword = keywords.some(keyword => title.includes(keyword));
+                            if (!hasKeyword) {
+                                counts[date]["annet"]++;
+                            }
+                        } else {
+                            activeKeywords.forEach(keyword => {
+                                if (title.includes(keyword)) {
+                                    counts[date][keyword]++;
+                                }
+                            });
+                        }
+                    });
+
+                    const sortedDates = Object.keys(counts).sort();
+
+                    const datasets = activeKeywords.map(keyword => ({
+                        label: keyword,
+                        data: sortedDates.map(date => counts[date][keyword] || 0),
+                        borderColor: keywordColors[keyword] || '#888888',
+                        backgroundColor: keywordColors[keyword] || '#888888',
+                        fill: false,
+                        tension: 0.2
+                    }));
+
+                    setChartData({
+                        labels: sortedDates,
+                        datasets
+                    });
+                }
             })
             .catch((error) => {
                 console.error('Feil ved henting av data:', error);
             });
-    }, [selectedKeywords, dateFilter]);
+    }, [selectedKeywords, dateFilter, showAll]);
 
     const options = {
         responsive: true,
@@ -111,6 +161,27 @@ const LineChart = () => {
         }
     };
 
+    // Håndterer checkbox-logikk
+    const toggleKeyword = (keyword) => {
+        // Hvis "Alle" er aktiv, slå av det når bruker velger nøkkelord
+        if (showAll) setShowAll(false);
+
+        if (selectedKeywords.includes(keyword)) {
+            setSelectedKeywords(prev => prev.filter(k => k !== keyword));
+        } else {
+            setSelectedKeywords(prev => [...prev, keyword]);
+        }
+    };
+
+    // Håndterer "Alle" checkbox toggle
+    const toggleShowAll = () => {
+        setShowAll(prev => !prev);
+        // Hvis vi aktiverer "Alle", fjerner vi alle individuelle keywords
+        if (!showAll) {
+            setSelectedKeywords([]);
+        }
+    };
+
     return (
         <div>
             <h4>Utvikling over tid</h4>
@@ -127,6 +198,18 @@ const LineChart = () => {
                     </select>
                 </div>
 
+                {/* "Alle" checkbox */}
+                <div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={showAll}
+                            onChange={toggleShowAll}
+                        />
+                        Alle saker
+                    </label>
+                </div>
+
                 {/* Nøkkelord filter */}
                 <div>
                     <strong>Nøkkelord:</strong><br />
@@ -136,13 +219,8 @@ const LineChart = () => {
                                 <input
                                     type="checkbox"
                                     checked={selectedKeywords.includes(keyword)}
-                                    onChange={() => {
-                                        if (selectedKeywords.includes(keyword)) {
-                                            setSelectedKeywords(prev => prev.filter(k => k !== keyword));
-                                        } else {
-                                            setSelectedKeywords(prev => [...prev, keyword]);
-                                        }
-                                    }}
+                                    onChange={() => toggleKeyword(keyword)}
+                                    disabled={showAll} // Deaktiver hvis "Alle" er valgt
                                 />
                                 {keyword}
                             </label>

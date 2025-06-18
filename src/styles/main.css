@@ -1,0 +1,106 @@
+.dashboard-wrapper {
+    background-color: #e6f0f5    ;
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.gabler-primary {
+    background-color: #002b44;
+    border-color: #002b44;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.gabler-primary:hover {
+    background-color: #116984; /* lysere/mer blågrønn */
+    border-color: #116984;
+    color: white;
+}
+
+.gabler-navbar {
+    background-color: #002b44;
+    border-bottom: 2px solid #116984; /* lysere blågrønn */
+}
+
+.gabler-navbar:hover {
+    background-color: #033a5c; /* lysere/mer blågrønn */
+}
+
+.logout-button {
+  background-color: #ffda00;
+  color: #002b44;
+  font-weight: bold;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d0c32a; /* En litt mørkere gul ved hover */
+  color: #002b44;
+}
+
+
+
+.neomorph-card, .shadow-sm {
+  background: #ffffff; /* hvit kortbakgrunn */
+  border-radius: 15px;
+  box-shadow:
+    4px 4px 15px rgba(0, 0, 0, 0.1),
+    -4px -4px 15px rgba(255, 255, 255, 0.7);
+  color: #232428; /* mørk tekst */
+  padding: 1rem;
+}
+
+.neomorph-card:hover {
+  box-shadow:
+    6px 6px 20px rgba(0, 0, 0, 0.5),
+    -6px -6px 20px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.keyword-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #f0f4f8;  /* Sterk tekstfarge */
+}
+
+.keyword-color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color);  /* Denne settes dynamisk */
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border: 1.5px solid rgba(255,255,255,0.3);
+}
+
+.welcome-card {
+    background-color: #f9fafb;
+    border-radius: 12px;
+    border: none;
+}
+
+.welcome-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #0E4D5C;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.welcome-text {
+  font-size: 1.125rem;       /* litt mindre, mer subtil */
+  color: #3a3a3a;            /* mørkere, mer nøytral grå */
+  font-weight: 400;          /* normal vekt */
+  line-height: 1.6;          /* bedre lesbarhet */
+  letter-spacing: 0.02em;    /* litt luft mellom bokstaver */
+  margin-top: 0.5rem;
+  animation: fadeInUpSmooth 1.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+

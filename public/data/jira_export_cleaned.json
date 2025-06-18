@@ -1,252 +1,602 @@
 ﻿[
     {
+        "title":  "QR-code join virker ikke",
+        "created":  "2025-06-18T13:07:00.709+0200",
+        "key":  "HELP-1155",
+        "description":  ""
+    },
+    {
+        "title":  "Teams skjermer pÃ¥ mÃ¸terom",
+        "created":  "2025-06-18T13:03:01.482+0200",
+        "key":  "HELP-1154",
+        "description":  ""
+    },
+    {
+        "title":  "Back-up fra Bergen PROD",
+        "created":  "2025-06-18T12:31:00.878+0200",
+        "key":  "HELP-1153",
+        "description":  ""
+    },
+    {
+        "title":  "Azure ressurser som kan fjernes",
+        "created":  "2025-06-18T11:49:00.854+0200",
+        "key":  "HELP-1152",
+        "description":  ""
+    },
+    {
+        "title":  "Tilgang til fellesmailbokser ved overgang til ny Outlook",
+        "created":  "2025-06-18T10:08:01.107+0200",
+        "key":  "HELP-1151",
+        "description":  ""
+    },
+    {
+        "title":  "tilgang citrix/Visma",
+        "created":  "2025-06-18T10:05:01.513+0200",
+        "key":  "HELP-1150",
+        "description":  ""
+    },
+    {
+        "title":  "Vs: ANBUD - LÃ¸renskog kommunale pensjonskasse - pÃ¥loggingsproblemer",
+        "created":  "2025-06-18T09:36:01.715+0200",
+        "key":  "HELP-1149",
+        "description":  ""
+    },
+    {
+        "title":  "Trenger hjelp med printing - fÃ¥r ikke lov Ã¥ printe",
+        "created":  "2025-06-18T08:47:01.325+0200",
+        "key":  "HELP-1148",
+        "description":  ""
+    },
+    {
+        "title":  "Defender - deaktivert laptop",
+        "created":  "2025-06-18T00:01:01.730+0200",
+        "key":  "HELP-1147",
+        "description":  ""
+    },
+    {
+        "title":  "[VIKTIG] Klarer dere Ã¥ restore filen?",
+        "created":  "2025-06-17T17:42:02.768+0200",
+        "key":  "HELP-1146",
+        "description":  ""
+    },
+    {
+        "title":  "App- og nettleserkontroll",
+        "created":  "2025-06-17T13:41:01.307+0200",
+        "key":  "HELP-1144",
+        "description":  ""
+    },
+    {
+        "title":  "Visma - kommer ikke inn i dok.senter",
+        "created":  "2025-06-17T13:09:01.370+0200",
+        "key":  "HELP-1143",
+        "description":  ""
+    },
+    {
+        "title":  "Nes Tech tilgang til Sandbox i GROW",
+        "created":  "2025-06-17T11:50:01.593+0200",
+        "key":  "HELP-1142",
+        "description":  ""
+    },
+    {
+        "title":  "Lager_ IT Flytteesker",
+        "created":  "2025-06-17T10:49:00.705+0200",
+        "key":  "HELP-1141",
+        "description":  ""
+    },
+    {
+        "title":  "Flytting av oppgaveliste ",
+        "created":  "2025-06-17T10:34:01.129+0200",
+        "key":  "HELP-1140",
+        "description":  ""
+    },
+    {
+        "title":  "Nedetider i Kompas?",
+        "created":  "2025-06-17T10:30:08.217+0200",
+        "key":  "HELP-1139",
+        "description":  ""
+    },
+    {
+        "title":  "Account Locked Out: GABLERP\\peen99 ",
+        "created":  "2025-06-17T09:08:02.962+0200",
+        "key":  "HELP-1138",
+        "description":  ""
+    },
+    {
+        "title":  "Teamet Flytteinfo HH1 kan slettes ",
+        "created":  "2025-06-17T08:55:00.993+0200",
+        "key":  "HELP-1137",
+        "description":  ""
+    },
+    {
+        "title":  "Teamet Enheter kan slettes ",
+        "created":  "2025-06-17T08:53:01.214+0200",
+        "key":  "HELP-1136",
+        "description":  ""
+    },
+    {
+        "title":  "Norsk Pensjon filimport",
+        "created":  "2025-06-17T07:56:00.759+0200",
+        "key":  "HELP-1135",
+        "description":  ""
+    },
+    {
+        "title":  "VismatrÃ¸bbel",
+        "created":  "2025-06-17T07:25:03.492+0200",
+        "key":  "HELP-1134",
+        "description":  ""
+    },
+    {
+        "title":  "Defender - deaktivert laptop",
+        "created":  "2025-06-17T00:01:01.583+0200",
+        "key":  "HELP-1133",
+        "description":  ""
+    },
+    {
+        "title":  "Tilgang QA Kompas Prod - Halden",
+        "created":  "2025-06-16T13:16:01.453+0200",
+        "key":  "HELP-1132",
+        "description":  ""
+    },
+    {
+        "title":  "Videresendelse av mailer til insight-mailen",
+        "created":  "2025-06-16T12:58:01.413+0200",
+        "key":  "HELP-1131",
+        "description":  ""
+    },
+    {
+        "title":  "mailbokser",
+        "created":  "2025-06-16T12:20:01.267+0200",
+        "key":  "HELP-1130",
+        "description":  ""
+    },
+    {
+        "title":  "FW: TIlgang server",
+        "created":  "2025-06-16T11:52:01.349+0200",
+        "key":  "HELP-1129",
+        "description":  ""
+    },
+    {
+        "title":  "Tilgang til mappe pÃ¥ Teams",
+        "created":  "2025-06-16T10:46:01.411+0200",
+        "key":  "HELP-1128",
+        "description":  ""
+    },
+    {
+        "title":  "Account vung99",
+        "created":  "2025-06-16T09:59:01.595+0200",
+        "key":  "HELP-1127",
+        "description":  ""
+    },
+    {
+        "title":  "FagprÃ¸ve - trenger Ã¥ opprette en Azure Static Web App - ber om website contributor rolle",
+        "created":  "2025-06-16T08:34:01.438+0200",
+        "key":  "HELP-1126",
+        "description":  ""
+    },
+    {
+        "title":  "CMP",
+        "created":  "2025-06-16T07:38:00.934+0200",
+        "key":  "HELP-1125",
+        "description":  ""
+    },
+    {
+        "title":  "Feil i Bace - fÃ¥r ikke logget inn",
+        "created":  "2025-06-16T07:20:01.222+0200",
+        "key":  "HELP-1124",
+        "description":  ""
+    },
+    {
+        "title":  "Defender - deaktivert laptop",
+        "created":  "2025-06-16T00:01:01.440+0200",
+        "key":  "HELP-1123",
+        "description":  ""
+    },
+    {
+        "title":  "Kompas og passord",
+        "created":  "2025-06-15T15:05:03.905+0200",
+        "key":  "HELP-1122",
+        "description":  ""
+    },
+    {
+        "title":  "Defender - deaktivert laptop",
+        "created":  "2025-06-15T00:01:01.631+0200",
+        "key":  "HELP-1121",
+        "description":  ""
+    },
+    {
+        "title":  "Share fra Kofax funker ikke med ny Outlook",
+        "created":  "2025-06-14T11:03:05.902+0200",
+        "key":  "HELP-1120",
+        "description":  ""
+    },
+    {
+        "title":  "Defender - deaktivert laptop",
+        "created":  "2025-06-14T00:01:01.793+0200",
+        "key":  "HELP-1119",
+        "description":  ""
+    },
+    {
         "title":  "Tregt i vy buss-basen",
         "created":  "2025-06-13T13:04:01.146+0200",
-        "key":  "HELP-1118"
+        "key":  "HELP-1118",
+        "description":  ""
     },
     {
         "title":  "Ã¸nsker tilgang til fÃ¸lgende storage account",
         "created":  "2025-06-13T12:21:01.373+0200",
-        "key":  "HELP-1117"
+        "key":  "HELP-1117",
+        "description":  ""
     },
     {
         "title":  "Medlem av GRP Oslo ",
         "created":  "2025-06-13T12:08:01.359+0200",
-        "key":  "HELP-1116"
+        "key":  "HELP-1116",
+        "description":  ""
     },
     {
         "title":  "Feil ved pÃ¥logging",
         "created":  "2025-06-13T12:00:01.695+0200",
-        "key":  "HELP-1115"
+        "key":  "HELP-1115",
+        "description":  ""
     },
     {
         "title":  "Tilgang GROW PROD ",
         "created":  "2025-06-13T10:11:01.212+0200",
-        "key":  "HELP-1114"
+        "key":  "HELP-1114",
+        "description":  ""
     },
     {
         "title":  "tilgang til produksjonsmiljÃ¸ene i grow",
         "created":  "2025-06-13T09:50:03.729+0200",
-        "key":  "HELP-1113"
+        "key":  "HELP-1113",
+        "description":  ""
     },
     {
         "title":  "Oppdatere 3850 QA med data fra produksjon",
         "created":  "2025-06-13T09:40:01.045+0200",
-        "key":  "HELP-1112"
+        "key":  "HELP-1112",
+        "description":  ""
     },
     {
         "title":  "[VIKTIG] Reise til Indonesia 16.06.-28.06.2025",
         "created":  "2025-06-13T09:32:01.272+0200",
-        "key":  "HELP-1111"
+        "key":  "HELP-1111",
+        "description":  ""
     },
     {
         "title":  "Mailboks for PKH",
         "created":  "2025-06-13T07:42:04.652+0200",
-        "key":  "HELP-1110"
+        "key":  "HELP-1110",
+        "description":  ""
     },
     {
         "title":  "Disk med mindre enn 3GB",
         "created":  "2025-06-13T04:01:01.417+0200",
-        "key":  "HELP-1109"
+        "key":  "HELP-1109",
+        "description":  ""
     },
     {
         "title":  "Defender - deaktivert laptop",
         "created":  "2025-06-13T00:01:01.307+0200",
-        "key":  "HELP-1108"
+        "key":  "HELP-1108",
+        "description":  ""
     },
     {
         "title":  "Zip fil",
         "created":  "2025-06-12T23:14:01.936+0200",
-        "key":  "HELP-1107"
+        "key":  "HELP-1107",
+        "description":  ""
     },
     {
         "title":  "account expired",
         "created":  "2025-06-12T15:29:04.781+0200",
-        "key":  "HELP-1106"
+        "key":  "HELP-1106",
+        "description":  ""
     },
     {
         "title":  "Feilmelding nÃ¥r jeg skal finne en skade i Contemi",
         "created":  "2025-06-12T12:40:01.427+0200",
-        "key":  "HELP-1104"
+        "key":  "HELP-1104",
+        "description":  ""
     },
     {
-        "title":  "Nytt headset til Christian Haugen",
+        "title":  "Nytt headset til bruker84",
         "created":  "2025-06-12T12:37:01.567+0200",
-        "key":  "HELP-1103"
+        "key":  "HELP-1103",
+        "description":  ""
     },
     {
         "title":  "Defender - deaktivert laptop",
         "created":  "2025-06-12T00:01:03.272+0200",
-        "key":  "HELP-1102"
+        "key":  "HELP-1102",
+        "description":  ""
     },
     {
         "title":  "FW: kan jeg fÃ¥ tilgang til den mappen der alle rapportene til FA gÃ¥r?",
         "created":  "2025-06-11T18:27:02.161+0200",
-        "key":  "HELP-1101"
+        "key":  "HELP-1101",
+        "description":  ""
     },
     {
         "title":  "Elsam #2",
         "created":  "2025-06-11T12:45:00.828+0200",
-        "key":  "HELP-1100"
+        "key":  "HELP-1100",
+        "description":  ""
     },
     {
         "title":  "Fikk rapport om elsam problem I grow, fant denne feilen pÃ¥ v-elsaminner (E:\\WebApp\\log\\ElsamDistributor_prod_2016_2.log):",
         "created":  "2025-06-11T12:44:01.056+0200",
-        "key":  "HELP-1099"
+        "key":  "HELP-1099",
+        "description":  ""
     },
     {
         "title":  "Ny mailadresse",
         "created":  "2025-06-11T11:18:01.206+0200",
-        "key":  "HELP-1098"
+        "key":  "HELP-1098",
+        "description":  ""
     },
     {
         "title":  "Nyansatt  Ola nordmann 11.06.2025",
         "created":  "2025-06-11T11:05:21.330+0200",
-        "key":  "HELP-1097"
+        "key":  "HELP-1097",
+        "description":  ""
     },
     {
         "title":  "Account Locked Out: GABLERP\\mopi99 ",
         "created":  "2025-06-11T09:44:00.869+0200",
-        "key":  "HELP-1096"
+        "key":  "HELP-1096",
+        "description":  ""
     },
     {
         "title":  "[VIKTIG] Kommer ikke inni bace3",
         "created":  "2025-06-11T07:27:01.771+0200",
-        "key":  "HELP-1095"
+        "key":  "HELP-1095",
+        "description":  ""
     },
     {
         "title":  "Jeg blir kastet ut av One Drive pÃ¥ fly",
         "created":  "2025-06-10T18:47:01.731+0200",
-        "key":  "HELP-1094"
+        "key":  "HELP-1094",
+        "description":  ""
     },
     {
         "title":  "Resepjonskonto fungerer ikke",
         "created":  "2025-06-10T14:53:01.156+0200",
-        "key":  "HELP-1093"
+        "key":  "HELP-1093",
+        "description":  ""
     },
     {
         "title":  "Ta back-up pÃ¥ Bergen 3620 fra PROD NÃ…",
         "created":  "2025-06-10T12:14:00.867+0200",
-        "key":  "HELP-1092"
+        "key":  "HELP-1092",
+        "description":  ""
     },
     {
         "title":  "Tilgang testmiljÃ¸ GROW privat",
         "created":  "2025-06-10T09:19:04.210+0200",
-        "key":  "HELP-1091"
+        "key":  "HELP-1091",
+        "description":  ""
     },
     {
         "title":  "VS: Hei",
         "created":  "2025-06-08T10:51:03.317+0200",
-        "key":  "HELP-1090"
+        "key":  "HELP-1090",
+        "description":  ""
     },
     {
         "title":  "Innlogging til excel",
         "created":  "2025-06-08T09:15:01.672+0200",
-        "key":  "HELP-1089"
+        "key":  "HELP-1089",
+        "description":  ""
     },
     {
         "title":  "Bace3 feilmelding",
         "created":  "2025-06-06T21:47:00.840+0200",
-        "key":  "HELP-1088"
+        "key":  "HELP-1088",
+        "description":  ""
     },
     {
         "title":  "Ny bÃ¦rbar som er bÃ¦rbar (min forrige er fra sommeren 2018)",
         "created":  "2025-06-06T20:32:01.245+0200",
-        "key":  "HELP-1087"
+        "key":  "HELP-1087",
+        "description":  ""
     },
     {
         "title":  "Digitaliseringsdirektoratet Incident - ID-porten: BankID tilnÃ¦rmet utilgjengelig fra kl 19:39 - 6 June 2025",
         "created":  "2025-06-06T19:56:03.210+0200",
-        "key":  "HELP-1086"
+        "key":  "HELP-1086",
+        "description":  ""
     },
     {
         "title":  "Databrickstilgang-applikasjon-tilgang til Azure Devops repo",
         "created":  "2025-06-06T16:09:02.317+0200",
-        "key":  "HELP-1085"
+        "key":  "HELP-1085",
+        "description":  ""
     },
     {
         "title":  "Re: \"pensjonistbestand\" pÃ¥ bergen fra Grow",
         "created":  "2025-06-06T14:27:01.764+0200",
-        "key":  "HELP-1084"
+        "key":  "HELP-1084",
+        "description":  ""
     },
     {
         "title":  "Resolved:Sev2 Azure Monitor Alert gpt-grow-db-disk on gpt-grow-demo-t3620-db ( microsoft.sql/servers/databases ) at 6/6/2025 12:23:33 PM",
         "created":  "2025-06-06T14:25:03.311+0200",
-        "key":  "HELP-1083"
+        "key":  "HELP-1083",
+        "description":  ""
     },
     {
         "title":  "Fired:Sev2 Azure Monitor Alert gpt-grow-db-disk on gpt-grow-demo-t3620-db ( microsoft.sql/servers/databases ) at 6/6/2025 11:48:36 AM",
         "created":  "2025-06-06T13:50:00.686+0200",
-        "key":  "HELP-1082"
+        "key":  "HELP-1082",
+        "description":  ""
     },
     {
         "title":  "Rettigheter HR Info",
         "created":  "2025-06-06T13:40:00.804+0200",
-        "key":  "HELP-1081"
+        "key":  "HELP-1081",
+        "description":  ""
     },
     {
         "title":  "Sharepoint",
         "created":  "2025-06-06T11:03:01.726+0200",
-        "key":  "HELP-1080"
+        "key":  "HELP-1080",
+        "description":  ""
     },
     {
         "title":  "Linker og Simployer",
         "created":  "2025-06-06T10:59:02.485+0200",
-        "key":  "HELP-1079"
+        "key":  "HELP-1079",
+        "description":  ""
     },
     {
         "title":  "\"pensjonistbestand\" pÃ¥ bergen fra Grow",
         "created":  "2025-06-06T09:34:00.745+0200",
-        "key":  "HELP-1078"
+        "key":  "HELP-1078",
+        "description":  ""
     },
     {
         "title":  "Kommer ikke inn i Power Office (PO)",
         "created":  "2025-06-06T09:10:03.229+0200",
-        "key":  "HELP-1076"
+        "key":  "HELP-1076",
+        "description":  ""
     },
     {
         "title":  "Jobb stopper ved kjÃ¸ring",
         "created":  "2025-06-06T08:50:01.747+0200",
-        "key":  "HELP-1075"
+        "key":  "HELP-1075",
+        "description":  ""
     },
     {
         "title":  "mail til rapport@gabler.no, hvem ligger i denne gruppen",
         "created":  "2025-06-06T07:30:01.269+0200",
-        "key":  "HELP-1074"
+        "key":  "HELP-1074",
+        "description":  ""
     },
     {
         "title":  "Skal rapportere i dag og har mistet tilgang til : Server W:  Citrix Intern (Contemi)  -  NAV - PO!",
         "created":  "2025-06-06T07:12:01.925+0200",
-        "key":  "HELP-1073"
+        "key":  "HELP-1073",
+        "description":  ""
     },
     {
         "title":  "Manglende gruppe i enterprise registrering for grow-memberportal-qa",
         "created":  "2025-06-05T16:15:01.169+0200",
-        "key":  "HELP-1072"
-    },
-    {
-        "title":  "Trenger storage account",
-        "created":  "2025-06-05T15:42:00.790+0200",
-        "key":  "HELP-1071"
+        "key":  "HELP-1072",
+        "description":  ""
     },
     {
         "title":  "Account Locked Out: GABLERP\\jawr99 ",
         "created":  "2025-06-05T12:46:01.355+0200",
-        "key":  "HELP-1070"
+        "key":  "HELP-1070",
+        "description":  ""
     },
     {
         "title":  "Endringer pÃ¥ felles mailbokser",
         "created":  "2025-06-05T12:22:01.361+0200",
-        "key":  "HELP-1069"
+        "key":  "HELP-1069",
+        "description":  ""
     },
     {
         "title":  "Backup Fylkene (Kompas prod)",
         "created":  "2025-06-05T10:04:01.451+0200",
-        "key":  "HELP-1068"
+        "key":  "HELP-1068",
+        "description":  ""
     },
     {
         "title":  "Authenticator app ",
         "created":  "2025-06-05T09:48:01.888+0200",
-        "key":  "HELP-1067"
+        "key":  "HELP-1067",
+        "description":  ""
+    },
+    {
+        "title":  "FW: Action required: Update Azure Application Gateway to TLS 1.2 or later",
+        "created":  "2025-06-05T07:54:01.114+0200",
+        "key":  "HELP-1066",
+        "description":  ""
+    },
+    {
+        "title":  "Account Locked Out: GABLERP\\cali07 ",
+        "created":  "2025-06-04T18:06:01.257+0200",
+        "key":  "HELP-1065",
+        "description":  ""
+    },
+    {
+        "title":  "lev-post - mappen",
+        "created":  "2025-06-04T16:06:01.566+0200",
+        "key":  "HELP-1064",
+        "description":  ""
+    },
+    {
+        "title":  "RE: OverfÃ¸ring av nummer til Telia feilet",
+        "created":  "2025-06-04T14:11:01.363+0200",
+        "key":  "HELP-1063",
+        "description":  ""
+    },
+    {
+        "title":  "Tilgang til server",
+        "created":  "2025-06-04T13:50:03.124+0200",
+        "key":  "HELP-1062",
+        "description":  ""
+    },
+    {
+        "title":  "opplÃ¦ring",
+        "created":  "2025-06-04T13:03:03.421+0200",
+        "key":  "HELP-1061",
+        "description":  ""
+    },
+    {
+        "title":  "Legge til Bruker32 i im@gabler.no",
+        "created":  "2025-06-04T12:57:53.570+0200",
+        "key":  "HELP-1060",
+        "description":  ""
+    },
+    {
+        "title":  "Tilganger GROW - Trondheim Kommunale Pensjonskasse",
+        "created":  "2025-06-04T12:42:01.123+0200",
+        "key":  "HELP-1059",
+        "description":  ""
+    },
+    {
+        "title":  "HR dashboard ",
+        "created":  "2025-06-04T11:44:01.343+0200",
+        "key":  "HELP-1058",
+        "description":  ""
+    },
+    {
+        "title":  "GitHub Copilot",
+        "created":  "2025-06-04T11:24:01.141+0200",
+        "key":  "HELP-1057",
+        "description":  ""
+    },
+    {
+        "title":  "Ny docking",
+        "created":  "2025-06-04T10:43:01.167+0200",
+        "key":  "HELP-1056",
+        "description":  ""
+    },
+    {
+        "title":  "FW: OverfÃ¸ring av nummer til Telia feilet",
+        "created":  "2025-06-04T10:17:01.657+0200",
+        "key":  "HELP-1055",
+        "description":  ""
+    },
+    {
+        "title":  "Stresstestuttrekk",
+        "created":  "2025-06-04T09:59:01.680+0200",
+        "key":  "HELP-1054",
+        "description":  ""
+    },
+    {
+        "title":  "SpÃ¸rsmÃ¥l om tilgang",
+        "created":  "2025-06-04T09:53:01.452+0200",
+        "key":  "HELP-1053",
+        "description":  ""
+    },
+    {
+        "title":  "ngng99",
+        "created":  "2025-06-04T09:47:01.102+0200",
+        "key":  "HELP-1052",
+        "description":  ""
     }
 ]

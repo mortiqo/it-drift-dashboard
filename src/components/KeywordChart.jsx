@@ -10,7 +10,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const KeywordChart = () => {
     const [chartData, setChartData] = useState(null);
 
-    const [selectedKeyword, setSelectedKeyword] = useState('alle');
+    const [selectedKeyword, setSelectedKeyword] = useState('annet');
 
     const [rawCounts, setRawcounts] = useState({});
 
@@ -18,19 +18,26 @@ const KeywordChart = () => {
         axios.get('/data/jira_export_cleaned.json')
         .then((response) => {
             const tickets = response.data;
-            const counts = { tilgang: 0, feil: 0, konto: 0, grow: 0, sikkerhet: 0, utstyr: 0 };
+            const counts = { tilgang: 0, azure: 0, account: 0, grow: 0, kompas: 0, bace: 0, deaktivert: 0, laptop: 0, annet: 0 };
 
             tickets.forEach(ticket => {
                 const title = ticket.title.toLowerCase();
+                let matched = false;
+
                 keywords.forEach(keyword => {
                     if (title.includes(keyword)) {
                         counts[keyword]++;
+                        matched = true;
                     }
                 });
+                if (!matched) {
+                    counts.annet++;
+                }
             });
 
+
             setRawcounts(counts);
-            setChartData(buildChartData(counts, 'alle'));
+            setChartData(buildChartData(counts, 'annet'));
         })
         .catch((error) => {
             console.error('feil ved henting av data:', error);
@@ -40,23 +47,23 @@ const KeywordChart = () => {
 
 
 const buildChartData = (counts, filter) => {
-    const filteredCounts = filter === 'alle'
+    const filteredCounts = filter === 'annet'
         ? counts 
         : { [filter]: counts[filter] };
 
+    const labels = Object.keys(filteredCounts);
+    const data = Object.values(filteredCounts);
+
     
-    const backgroundColor = filter === 'alle'
-        ? keywordColors.alle
-        : [keywordColors[filter]];
+    const backgroundColor = labels.map(label => keywordColors[label] || '#999999');
 
 
     return {
-        labels: Object.keys(filteredCounts),
+        labels,
         datasets: [{
-            label: 'Antall saker',
-            data: Object.values(filteredCounts),
+            data,
             backgroundColor,
-            borderWidth: 1,
+            borderWidth: 1
         }]
     };
 };
@@ -74,7 +81,7 @@ return (
         <Form.Group className="mb-3">
             <Form.Label>Filtrer på nøkkelord:</Form.Label>
             <Form.Select value={selectedKeyword} onChange={handleFilterChange}>
-                <option value="alle">Alle</option>
+                <option value="annet">Annet</option>
                 {keywords.map((kw) => (
                     <option key={kw} value={kw}>{kw}</option>
                 ))}
