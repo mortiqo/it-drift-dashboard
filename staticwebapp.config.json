@@ -3,12 +3,6 @@
     "rewrite": "/index.html",
     "exclude": ["/assets/*", "/api/*"]
   },
-  "routes": [
-    {
-      "route": "/*",
-      "rewrite": "/index.html",
-    },
-  ],
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
