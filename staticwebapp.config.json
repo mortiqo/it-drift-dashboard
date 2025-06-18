@@ -6,7 +6,6 @@
   "routes": [
     {
       "route": "/*",
-      "allowedRoles": ["authenticated"],
       "rewrite": "/index.html"
     },
     {
