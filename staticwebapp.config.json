@@ -8,10 +8,6 @@
       "route": "/*",
       "rewrite": "/index.html"
     },
-    {
-      "route": "/api/*",
-      "allowedRoles": ["authenticated"]
-    }
   ],
   "auth": {
     "identityProviders": {
